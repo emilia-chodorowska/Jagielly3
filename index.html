@@ -38,9 +38,6 @@
         .section-title {
             @apply text-2xl md:text-3xl font-bold text-slate-900 tracking-tight;
         }
-        .card {
-            @apply bg-white border border-slate-200 rounded-xl shadow-sm;
-        }
         /* Slider styles */
         .slider-container {
             position: relative;
@@ -95,7 +92,7 @@
             </p>
         </header>
 
-        <main class="space-y-8 md:space-y-12">
+        <main class="space-y-16 md:space-y-20">
             <!-- Section 2: Photo Gallery (Slider) -->
             <section id="galeria" class="relative">
                 <div class="slider-container rounded-xl overflow-hidden border border-slate-200/80">
@@ -122,10 +119,10 @@
             </section>
 
             <!-- Section 3: General Description -->
-            <section id="opis" class="card p-8 md:p-10">
-                <h2 class="section-title mb-6">O Nieruchomości</h2>
-                <div class="grid md:grid-cols-2 gap-8 text-slate-600 leading-relaxed">
-                    <div>
+            <section id="opis">
+                <h2 class="section-title mb-8">O Nieruchomości</h2>
+                <div class="grid md:grid-cols-5 gap-8 text-slate-600 leading-relaxed">
+                    <div class="md:col-span-3">
                         <p>
                             Przestronne mieszkanie inwestycyjne zlokalizowane na III piętrze w odrestaurowanej kamienicy w sercu Szczecina. Lokal został profesjonalnie podzielony na <strong>6 niezależnych pokoi jednoosobowych</strong>, co maksymalizuje stopę zwrotu. Duża, widna kuchnia i komfortowa łazienka tworzą funkcjonalną przestrzeń wspólną.
                         </p>
@@ -133,13 +130,13 @@
                             Lokalizacja w samym centrum przyciąga stabilną grupę najemców (studentów i młode osoby pracujące), co <strong>gwarantuje pełne obłożenie przez 12 miesięcy w roku</strong>. Aktualne umowy najmu są podpisane do końca września 2025 roku.
                         </p>
                     </div>
-                    <div>
+                    <div class="md:col-span-2 text-sm">
                         <h3 class="font-semibold text-slate-800 mb-3">Kluczowe Informacje:</h3>
-                        <ul class="list-disc list-inside space-y-2">
-                            <li><span class="font-semibold text-slate-700">Lokalizacja:</span> Ul. Jagiełły 3, Szczecin</li>
-                            <li><span class="font-semibold text-slate-700">Powierzchnia:</span> 103 m²</li>
-                            <li><span class="font-semibold text-slate-700">Piętro:</span> 3</li>
-                            <li><span class="font-semibold text-slate-700">Stan:</span> Bardzo dobry, 4 z 6 pokoi po odnowieniu</li>
+                        <ul class="space-y-2">
+                            <li><span class="font-medium text-slate-500">Lokalizacja:</span> Ul. Jagiełły 3, Szczecin</li>
+                            <li><span class="font-medium text-slate-500">Powierzchnia:</span> 103 m²</li>
+                            <li><span class="font-medium text-slate-500">Piętro:</span> 3</li>
+                            <li><span class="font-medium text-slate-500">Stan:</span> Bardzo dobry, 4 z 6 pokoi po odnowieniu</li>
                         </ul>
                         <h3 class="font-semibold text-slate-800 mt-6 mb-3">Atuty Techniczne:</h3>
                         <ul class="space-y-3">
@@ -161,35 +158,35 @@
             </section>
 
             <!-- Section 4: ROI Calculation -->
-            <section id="roi" class="card p-8 md:p-10">
-                <h2 class="section-title mb-6">Potencjał Inwestycyjny (ROI)</h2>
-                <p class="text-slate-600 mb-8">Nieruchomość jest gotowym biznesem. Poniższa symulacja przedstawia prognozowany roczny zwrot z inwestycji (ROI).</p>
+            <section id="roi">
+                <h2 class="section-title mb-8">Potencjał Inwestycyjny (ROI)</h2>
+                <p class="text-slate-600 mb-8 max-w-3xl">Nieruchomość jest gotowym biznesem. Poniższa symulacja przedstawia prognozowany roczny zwrot z inwestycji (ROI).</p>
                 
                 <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
-                    <div class="md:col-span-3 bg-slate-50 p-6 rounded-lg border border-slate-200">
+                    <div class="md:col-span-3 bg-white p-6 rounded-xl border border-slate-200">
                         <h3 class="font-semibold text-slate-800 mb-4">Struktura Finansowa</h3>
                         <div class="space-y-3 text-sm">
-                            <div class="flex justify-between"><span class="text-slate-500">Cena Ofertowa:</span> <span class="font-mono font-semibold text-slate-900">640 000 PLN</span></div>
-                            <hr>
-                            <div class="flex justify-between"><span class="text-slate-500">Miesięczny przychód (6 pokoi):</span> <span class="font-mono text-slate-700">7 300 PLN</span></div>
-                            <div class="flex justify-between"><span class="text-slate-500">Miesięczne koszty łączne:</span> <span class="font-mono text-slate-700">2 060 PLN</span></div>
-                            <div class="pl-4 text-xs text-slate-500 space-y-1 mt-1">
-                                <div class="flex justify-between"><span>- Czynsz i ogrzewanie</span> <span class="font-mono">1 290 PLN</span></div>
-                                <div class="flex justify-between"><span>- Fundusz remontowy</span> <span class="font-mono">260 PLN</span></div>
-                                <div class="flex justify-between"><span>- Prąd</span> <span class="font-mono">215 PLN</span></div>
-                                <div class="flex justify-between"><span>- Gaz</span> <span class="font-mono">225 PLN</span></div>
-                                <div class="flex justify-between"><span>- Internet</span> <span class="font-mono">70 PLN</span></div>
+                            <div class="flex justify-between py-2 border-b border-slate-100"><span class="text-slate-500">Cena Ofertowa:</span> <span class="font-mono font-semibold text-slate-900">640 000 PLN</span></div>
+                            <div class="flex justify-between py-2 border-b border-slate-100"><span class="text-slate-500">Miesięczny przychód (6 pokoi):</span> <span class="font-mono text-slate-700">7 300 PLN</span></div>
+                            <div class="py-2 border-b border-slate-100">
+                                <div class="flex justify-between"><span class="text-slate-500">Miesięczne koszty łączne:</span> <span class="font-mono text-slate-700">2 060 PLN</span></div>
+                                <div class="pl-4 text-xs text-slate-500 space-y-1 mt-2">
+                                    <div class="flex justify-between"><span>- Czynsz i ogrzewanie</span> <span class="font-mono">1 290 PLN</span></div>
+                                    <div class="flex justify-between"><span>- Fundusz remontowy</span> <span class="font-mono">260 PLN</span></div>
+                                    <div class="flex justify-between"><span>- Prąd</span> <span class="font-mono">215 PLN</span></div>
+                                    <div class="flex justify-between"><span>- Gaz</span> <span class="font-mono">225 PLN</span></div>
+                                    <div class="flex justify-between"><span>- Internet</span> <span class="font-mono">70 PLN</span></div>
+                                </div>
                             </div>
-                            <hr>
-                            <div class="flex justify-between font-semibold"><span class="text-slate-800">Miesięczny dochód:</span> <span class="font-mono text-slate-900">5 240 PLN</span></div>
-                            <div class="flex justify-between font-semibold"><span class="text-slate-800">Roczny dochód:</span> <span class="font-mono text-slate-900">62 880 PLN</span></div>
+                            <div class="flex justify-between py-2 border-b border-slate-100 font-semibold"><span class="text-slate-800">Miesięczny dochód:</span> <span class="font-mono text-slate-900">5 240 PLN</span></div>
+                            <div class="flex justify-between pt-2 font-semibold"><span class="text-slate-800">Roczny dochód:</span> <span class="font-mono text-slate-900">62 880 PLN</span></div>
                         </div>
                     </div>
                     
-                    <div class="md:col-span-2 bg-blue-50 p-6 rounded-lg border border-blue-200 flex flex-col items-center justify-center text-center">
+                    <div class="md:col-span-2 bg-blue-50 p-6 rounded-xl border border-blue-200 flex flex-col items-center justify-center text-center">
                         <h3 class="font-semibold text-blue-900 mb-2">Prognozowane ROI</h3>
                         <p class="text-5xl font-bold text-blue-800 tracking-tighter">9.83%</p>
-                        <p class="text-sm text-blue-700 mt-2 font-mono">
+                        <p class="text-sm text-blue-700 mt-4 font-mono">
                            $$ \frac{62\ 880 \text{ PLN}}{640\ 000 \text{ PLN}} \times 100\% $$
                         </p>
                     </div>
