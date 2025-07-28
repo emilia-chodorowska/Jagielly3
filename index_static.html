@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mieszkanie Inwestycyjne na Sprzedaż | Jagiełły 3, Szczecin</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- KaTeX for LaTeX Math Rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" xintegrity="sha384-n8MVd4RsNIU0KOVEMVIhbTeISPRAAEDtrdNsZLF/CWMsN8rSFCMgorjNo4+p7wcf" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" xintegrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctMQanyES51" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" xintegrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+
+    <!-- === FAVICON === -->
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/favicon.ico">
+    <link rel="icon" sizes="192x192" href="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/android-chrome-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/favicon-16x16.png">
+
+    <style>
+        /* Custom styles for a clean, modern look */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa; /* Slightly off-white background */
+            color: #1a202c; /* Dark gray text */
+        }
+        .btn {
+            @apply inline-block px-6 py-3 text-sm font-semibold text-white bg-slate-800 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500;
+        }
+        .section-title {
+            @apply text-2xl md:text-3xl font-bold text-slate-900 tracking-tight;
+        }
+        
+        /* === PRINT STYLES === */
+        @media print {
+            /* Hide elements not needed for print */
+            #kontakt, footer {
+                display: none;
+            }
+
+            /* Ensure sections start on a new page */
+            section {
+                break-before: page;
+            }
+            
+            /* The very first section shouldn't have a page break before it */
+             header + main > section:first-of-type {
+                break-before: auto;
+            }
+
+            /* Try to avoid breaking figures and images across pages */
+            .grid > div, img {
+                break-inside: avoid;
+            }
+            
+            /* Remove shadows and other screen-only styles for cleaner print */
+            .shadow-lg {
+                box-shadow: none;
+            }
+            
+            body {
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="max-w-4xl mx-auto p-4 md:p-8 space-y-8 md:space-y-12">
+
+        <!-- Section 1: Hero Section -->
+        <header class="text-center pt-12 pb-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-900 tracking-wide mb-6">
+                Mieszkanie inwestycyjne | Sześć pokoi w centrum | Jagiełły 3
+            </h1>
+            <p class="max-w-2xl mx-auto text-slate-500 text-base">
+                Okazja inwestycyjna: 103 m² w odrestaurowanej kamienicy, zoptymalizowane pod wynajem. Sześć pokoi i atrakcyjna lokalizacja gwarantują pełne obłożenie i stabilny dochód pasywny.
+            </p>
+        </header>
+
+        <main class="space-y-16 md:space-y-20">
+            
+            <!-- Section 2: Photo Gallery (Static Grid) -->
+            <section id="galeria">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    
+                    <!-- Image Items -->
+                    <div class="overflow-hidden rounded-xl shadow-lg col-span-2 md:col-span-3">
+                        <img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/kamienica.jpg" alt="[Zdjęcie kamienicy]" class="w-full object-cover">
+                        <div class="bg-white p-3">
+                            <h3 class="text-slate-700 font-semibold text-center text-sm">Odrestaurowana kamienica</h3>
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/kuchnia.jpg" alt="[Zdjęcie kuchni]" class="w-full object-cover">
+                        <div class="bg-white p-3">
+                            <h3 class="text-slate-700 font-semibold text-center text-sm">Duża kuchnia z oknem</h3>
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/lazienka_1.jpg" alt="[Zdjęcie łazienki]" class="w-full object-cover">
+                        <div class="bg-white p-3">
+                            <h3 class="text-slate-700 font-semibold text-center text-sm">Łazienka - widok 1</h3>
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/lazienka_2.jpg" alt="[Zdjęcie łazienki]" class="w-full object-cover">
+                        <div class="bg-white p-3">
+                            <h3 class="text-slate-700 font-semibold text-center text-sm">Łazienka - widok 2</h3>
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/przedpokoj.jpg" alt="[Zdjęcie przedpokoju]" class="w-full object-cover">
+                        <div class="bg-white p-3">
+                            <h3 class="text-slate-700 font-semibold text-center text-sm">Przedpokój</h3>
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/pokoj1_1.jpeg" alt="[Zdjęcie pokoju 1]" class="w-full object-cover">
+                        <div class="bg-white p-3">
+                            <h3 class="text-slate-700 font-semibold text-center text-sm">Pokój 1</h3>
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/pokoj1_2.jpeg" alt="[Zdjęcie pokoju 1]" class="w-full object-cover">
+                        <div class="bg-white p-3">
+                            <h3 class="text-slate-700 font-semibold text-center text-sm">Pokój 1</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/pokoj3_01.jpg" alt="[Zdjęcie pokoju 3]" class="w-full object-cover">
+                        <div class="bg-white p-3">
+                            <h3 class="text-slate-700 font-semibold text-center text-sm">Pokój 3</h3>
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/pokoj3_02.jpg" alt="[Zdjęcie pokoju 3]" class="w-full object-cover">
+                        <div class="bg-white p-3">
+                            <h3 class="text-slate-700 font-semibold text-center text-sm">Pokój 3</h3>
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/pokoj3_05.jpg" alt="[Zdjęcie pokoju 3]" class="w-full object-cover">
+                        <div class="bg-white p-3">
+                            <h3 class="text-slate-700 font-semibold text-center text-sm">Pokój 3</h3>
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/pokoj5_1.jpg" alt="[Zdjęcie pokoju 5]" class="w-full object-cover">
+                        <div class="bg-white p-3">
+                            <h3 class="text-slate-700 font-semibold text-center text-sm">Pokój 5</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/pokoj5_2.jpg" alt="[Zdjęcie pokoju 5]" class="w-full object-cover">
+                        <div class="bg-white p-3">
+                            <h3 class="text-slate-700 font-semibold text-center text-sm">Pokój 5</h3>
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/pokoj5_4.jpg" alt="[Zdjęcie pokoju 5]" class="w-full object-cover">
+                        <div class="bg-white p-3">
+                            <h3 class="text-slate-700 font-semibold text-center text-sm">Pokój 5</h3>
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden rounded-xl shadow-lg col-span-2 md:col-span-3">
+                        <img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/rzut.jpg" alt="[Rzut mieszkania]" class="w-full object-cover">
+                        <div class="bg-white p-3">
+                            <h3 class="text-slate-700 font-semibold text-center text-sm">Rzut mieszkania</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: General Description -->
+            <section id="opis">
+                <h2 class="section-title mb-8">O Nieruchomości</h2>
+                <div class="grid md:grid-cols-5 gap-8 text-slate-600 leading-relaxed">
+                    <div class="md:col-span-3">
+                        <p>
+                            Przestronne mieszkanie inwestycyjne zlokalizowane na III piętrze w odrestaurowanej kamienicy w sercu Szczecina. Lokal został profesjonalnie podzielony na <strong>6 niezależnych pokoi jednoosobowych</strong>, co maksymalizuje stopę zwrotu. Duża, widna kuchnia i komfortowa łazienka tworzą funkcjonalną przestrzeń wspólną.
+                        </p>
+                        <p class="mt-4">
+                            Lokalizacja w samym centrum przyciąga stabilną grupę najemców (studentów i młode osoby pracujące), co <strong>gwarantuje pełne obłożenie przez 12 miesięcy w roku</strong>. Aktualne umowy najmu są podpisane do końca września 2025 roku.
+                        </p>
+                    </div>
+                    <div class="md:col-span-2 text-sm">
+                        <h3 class="font-semibold text-slate-800 mb-3">Kluczowe Informacje:</h3>
+                        <ul class="space-y-2">
+                            <li><span class="font-medium text-slate-500">Lokalizacja:</span> Ul. Jagiełły 3, Szczecin</li>
+                            <li><span class="font-medium text-slate-500">Powierzchnia:</span> 103 m²</li>
+                            <li><span class="font-medium text-slate-500">Piętro:</span> 3</li>
+                            <li><span class="font-medium text-slate-500">Stan:</span> Bardzo dobry, 4 z 6 pokoi po odnowieniu</li>
+                        </ul>
+                        <h3 class="font-semibold text-slate-800 mt-6 mb-3">Atuty Techniczne:</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 mr-3 text-slate-500 flex-shrink-0"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+                                <span>Ogrzewanie miejskie</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 mr-3 text-slate-500 flex-shrink-0"><path d="m4 4 2.5 2.5"/><path d="M13.5 6.5a4.5 4.5 0 1 1-6.364 6.364"/><path d="M16 16s-1.5-2-4-2-4 2-4 2"/><path d="M8 22h8"/><path d="M12 16v6"/></svg>
+                                <span>Ciepła woda z podgrzewacza gazowego</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 mr-3 text-slate-500 flex-shrink-0"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.84l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.84Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg>
+                                <span>Wszystkie odpływy grawitacyjne (bezawaryjne)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4: ROI Calculation -->
+            <section id="roi">
+                <h2 class="section-title mb-8">Potencjał Inwestycyjny (ROI)</h2>
+                <p class="text-slate-600 mb-8 max-w-3xl">Nieruchomość jest gotowym biznesem. Poniższa symulacja przedstawia prognozowany roczny zwrot z inwestycji (ROI).</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+                    <div class="md:col-span-3 bg-white p-6 rounded-xl border border-slate-200">
+                        <h3 class="font-semibold text-slate-800 mb-4">Struktura Finansowa</h3>
+                        <div class="space-y-3 text-sm">
+                            <div class="flex justify-between py-2 border-b border-slate-100"><span class="text-slate-500">Cena Ofertowa:</span> <span class="font-mono font-semibold text-slate-900">650 000 PLN</span></div>
+                            <div class="flex justify-between py-2 border-b border-slate-100"><span class="text-slate-500">Miesięczny przychód (6 pokoi):</span> <span class="font-mono text-slate-700">7 300 PLN</span></div>
+                            <div class="py-2 border-b border-slate-100">
+                                <div class="flex justify-between"><span class="text-slate-500">Miesięczne koszty łączne:</span> <span class="font-mono text-slate-700">2 060 PLN</span></div>
+                                <div class="pl-4 text-xs text-slate-500 space-y-1 mt-2">
+                                    <div class="flex justify-between"><span>- Czynsz i ogrzewanie</span> <span class="font-mono">1 290 PLN</span></div>
+                                    <div class="flex justify-between"><span>- Fundusz remontowy</span> <span class="font-mono">260 PLN</span></div>
+                                    <div class="flex justify-between"><span>- Prąd</span> <span class="font-mono">215 PLN</span></div>
+                                    <div class="flex justify-between"><span>- Gaz</span> <span class="font-mono">225 PLN</span></div>
+                                    <div class="flex justify-between"><span>- Internet</span> <span class="font-mono">70 PLN</span></div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between py-2 border-b border-slate-100 font-semibold"><span class="text-slate-800">Miesięczny dochód:</span> <span class="font-mono text-slate-900">5 240 PLN</span></div>
+                            <div class="flex justify-between pt-2 font-semibold"><span class="text-slate-800">Roczny dochód:</span> <span class="font-mono text-slate-900">62 880 PLN</span></div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:col-span-2 bg-blue-50 p-6 rounded-xl border border-blue-200 flex flex-col items-center justify-center text-center">
+                        <h3 class="font-semibold text-blue-900 mb-2">Prognozowane ROI</h3>
+                        <p class="text-5xl font-bold text-blue-800 tracking-tighter">9.67%</p>
+                        <p class="text-sm text-blue-700 mt-4 font-mono">
+                           $$ \frac{62\ 880 \text{ PLN}}{650\ 000 \text{ PLN}} \times 100\% $$
+                        </p>
+                    </div>
+                </div>
+                 <p class="text-xs text-slate-500 mt-6 text-center">
+                    Dostępna pełna dokumentacja finansowa.
+                </p>
+            </section>
+
+            <!-- Section 5: Call to Action -->
+            <section id="kontakt" class="text-center pt-0 pb-12">
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-lg">
+                    <a href="tel:+48509959493" class="font-semibold text-slate-800 inline-flex items-center hover:text-blue-600 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-2 text-slate-600 flex-shrink-0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        Szymon Chodorowski: 509 959 493
+                    </a>
+                    <span class="hidden sm:block text-slate-300">|</span>
+                    <a href="mailto:szymon.chodorowski@gmail.com" class="font-semibold text-slate-800 inline-flex items-center hover:text-blue-600 transition-colors">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-2 text-slate-600 flex-shrink-0"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        szymon.chodorowski@gmail.com
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center py-6 border-t border-slate-200">
+            <p class="text-sm text-slate-500">&copy; 2025</p>
+        </footer>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Render KaTeX math formulas after DOM loads
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ]
+            });
+        });
+    </script>
+
+</body>
+</html>
