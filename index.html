@@ -2,272 +2,692 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mieszkanie Inwestycyjne na Sprzedaż | Jagiełły 3, Szczecin</title>
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#f8f9fa">
+    <title>Mieszkanie inwestycyjne, 6 pokoi, 103 m² | Jagiełły 3, Szczecin</title>
+    <meta name="description" content="Mieszkanie inwestycyjne 103 m² na III piętrze odrestaurowanej kamienicy w centrum Szczecina, podzielone na 6 pokoi jednoosobowych. Cena 650 000 PLN, prognozowane ROI 9,67%.">
+
+    <!-- Open Graph / social preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://emilia-chodorowska.github.io/Jagielly3/">
+    <meta property="og:title" content="Mieszkanie inwestycyjne, 6 pokoi, 103 m² | Jagiełły 3, Szczecin">
+    <meta property="og:description" content="103 m² na III piętrze odrestaurowanej kamienicy w centrum Szczecina, 6 pokoi jednoosobowych. Cena 650 000 PLN, prognozowane ROI 9,67%.">
+    <meta property="og:image" content="https://emilia-chodorowska.github.io/Jagielly3/images/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mieszkanie inwestycyjne, 6 pokoi, 103 m² | Jagiełły 3, Szczecin">
+    <meta name="twitter:description" content="103 m² na III piętrze odrestaurowanej kamienicy w centrum Szczecina, 6 pokoi jednoosobowych. Cena 650 000 PLN, prognozowane ROI 9,67%.">
+    <meta name="twitter:image" content="https://emilia-chodorowska.github.io/Jagielly3/images/og-image.jpg">
+
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- KaTeX for LaTeX Math Rendering -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" xintegrity="sha384-n8MVd4RsNIU0KOVEMVIhbTeISPRAAEDtrdNsZLF/CWMsN8rSFCMgorjNo4+p7wcf" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" xintegrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctMQanyES51" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" xintegrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
 
     <!-- === FAVICON === -->
-    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/favicon.ico">
-    <link rel="icon" sizes="192x192" href="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/android-chrome-192x192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 
     <style>
-        /* Custom styles for a clean, modern look */
+        :root {
+            --bg: #f8f9fa;
+            --card: #ffffff;
+            --ink: #0f172a;
+            --ink-soft: #475569;
+            --muted: #64748b;
+            --line: #e2e8f0;
+            --accent: #1e40af;
+            --accent-bg: #eff6ff;
+            --accent-line: #bfdbfe;
+            --maxw: 56rem;
+        }
+
+        * { box-sizing: border-box; }
+
+        html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8f9fa; /* Slightly off-white background */
-            color: #1a202c; /* Dark gray text */
+            margin: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--bg);
+            color: var(--ink);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -webkit-tap-highlight-color: rgba(30, 64, 175, 0.12);
+            overflow-x: hidden;
         }
-        .btn {
-            @apply inline-block px-6 py-3 text-sm font-semibold text-white bg-slate-800 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500;
-        }
-        .section-title {
-            @apply text-2xl md:text-3xl font-bold text-slate-900 tracking-tight;
-        }
-        /* Slider styles */
-        .slider-container {
-            position: relative;
-            overflow: hidden;
-        }
-        .slide {
-            display: none;
-            transition: opacity 0.5s ease-in-out;
-        }
-        .slide.active {
-            display: block;
-        }
-        .slider-nav {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
+
+        img { max-width: 100%; display: block; }
+
+        a { color: inherit; }
+
+        /* iOS sam podkreśla wykryte numery — blokada */
+        a[href^="x-apple-data-detectors"] { color: inherit !important; text-decoration: none !important; }
+
+        .wrap {
+            max-width: var(--maxw);
+            margin: 0 auto;
             padding: 0 1rem;
-            pointer-events: none; /* Allows clicking through the container */
         }
-        .slider-nav button {
-            pointer-events: all; /* Makes buttons clickable */
-            background-color: rgba(255, 255, 255, 0.8);
-            border: 1px solid #e2e8f0;
+
+        /* ==== HERO ==== */
+        header.hero {
+            padding: 2.25rem 0 0.5rem;
+            text-align: center;
+        }
+        header.hero h1 {
+            font-size: clamp(1.5rem, 6.2vw, 2.75rem);
+            line-height: 1.2;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            margin: 0 0 0.75rem;
+            text-wrap: balance;
+        }
+        header.hero .lead {
+            max-width: 42rem;
+            margin: 0 auto;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        /* pasek najważniejszych liczb — na mobile 2 kolumny, na desktop 4 */
+        .facts {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+            margin: 1.5rem 0 0;
+        }
+        .fact {
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 0.75rem;
+            padding: 0.7rem 0.5rem;
+            text-align: center;
+        }
+        .fact dt {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--muted);
+            margin: 0 0 0.15rem;
+        }
+        .fact dd {
+            margin: 0;
+            font-size: 1.05rem;
+            font-weight: 600;
+            font-variant-numeric: tabular-nums;
+        }
+
+        /* ==== SEKCJE ==== */
+        main { display: block; }
+        section { margin-top: 3rem; scroll-margin-top: 1rem; }
+        h2.section-title {
+            font-size: clamp(1.35rem, 4.5vw, 1.875rem);
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            margin: 0 0 1.25rem;
+        }
+        h3 { font-size: 0.95rem; font-weight: 600; margin: 0 0 0.75rem; }
+        p { margin: 0 0 1rem; }
+
+        /* ==== GALERIA ==== */
+        .gallery { margin-top: 1.75rem; }
+
+        .carousel {
+            position: relative;
+            border: 1px solid var(--line);
+            border-radius: 0.75rem;
+            overflow: hidden;
+            background: #fff;
+        }
+        .track {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+        }
+        .track::-webkit-scrollbar { display: none; }
+
+        .slide {
+            flex: 0 0 100%;
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+        }
+        .slide figure { margin: 0; }
+        .slide img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            background: #f1f5f9;
+        }
+        .slide img.plan { object-fit: contain; background: #fff; }
+        .slide figcaption {
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--muted);
+            padding: 0.6rem 0.75rem;
+            background: #f8fafc;
+            border-top: 1px solid var(--line);
+        }
+
+        .nav-btn {
+            position: absolute;
+            top: calc((100% - 2.4rem) / 2);
+            transform: translateY(-50%);
+            width: 44px;
+            height: 44px;
             border-radius: 9999px;
-            width: 40px;
-            height: 40px;
+            border: 1px solid var(--line);
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(4px);
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            transition: background-color 0.2s;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+            cursor: pointer;
+            color: #334155;
+            padding: 0;
         }
-        .slider-nav button:hover {
-            background-color: white;
-        } 
+        .nav-btn:active { background: #fff; transform: translateY(-50%) scale(0.94); }
+        .nav-btn[hidden] { display: none; }
+        #prevBtn { left: 0.5rem; }
+        #nextBtn { right: 0.5rem; }
+
+        .counter {
+            position: absolute;
+            top: 0.6rem;
+            right: 0.6rem;
+            background: rgba(15, 23, 42, 0.68);
+            color: #fff;
+            font-size: 0.72rem;
+            font-variant-numeric: tabular-nums;
+            padding: 0.2rem 0.55rem;
+            border-radius: 9999px;
+        }
+
+        /* chipsy do skoku po pomieszczeniach */
+        .chips {
+            display: flex;
+            gap: 0.4rem;
+            overflow-x: auto;
+            padding: 0.75rem 0.25rem 0.25rem;
+            margin: 0 -0.25rem;
+            scrollbar-width: none;
+        }
+        .chips::-webkit-scrollbar { display: none; }
+        .chip {
+            flex: 0 0 auto;
+            font-size: 0.8rem;
+            font-family: inherit;
+            padding: 0.45rem 0.8rem;
+            border-radius: 9999px;
+            border: 1px solid var(--line);
+            background: #fff;
+            color: var(--ink-soft);
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .chip[aria-current="true"] {
+            background: var(--ink);
+            border-color: var(--ink);
+            color: #fff;
+        }
+
+        /* ==== OPIS ==== */
+        .cols {
+            display: grid;
+            gap: 1.75rem;
+            color: var(--ink-soft);
+        }
+        .info-list, .feature-list { list-style: none; margin: 0; padding: 0; font-size: 0.9rem; }
+        .info-list li {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--line);
+        }
+        .info-list li span:first-child { color: var(--muted); }
+        .info-list li span:last-child { text-align: right; font-weight: 500; color: var(--ink); }
+        .feature-list li { display: flex; gap: 0.7rem; padding: 0.4rem 0; }
+        .feature-list svg { width: 20px; height: 20px; flex: 0 0 20px; color: var(--muted); margin-top: 0.15rem; }
+        .sub-card {
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 0.75rem;
+            padding: 1.1rem;
+        }
+        .sub-card + .sub-card { margin-top: 1rem; }
+
+        /* ==== ROI ==== */
+        .roi-grid { display: grid; gap: 1rem; }
+        .fin-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 0.75rem;
+            padding: 0.55rem 0;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.875rem;
+        }
+        .fin-row > span:first-child { color: var(--muted); }
+        .fin-row .val {
+            font-variant-numeric: tabular-nums;
+            white-space: nowrap;
+            font-weight: 500;
+            color: var(--ink);
+        }
+        .fin-row.total { font-weight: 600; }
+        .fin-row.total > span:first-child { color: var(--ink); }
+        .fin-sub {
+            padding: 0.25rem 0 0.5rem 0.75rem;
+            border-left: 2px solid var(--line);
+            margin: 0.35rem 0 0.25rem 0.1rem;
+        }
+        .fin-sub .fin-row {
+            font-size: 0.8rem;
+            padding: 0.25rem 0;
+            border-bottom: 0;
+            color: var(--muted);
+        }
+
+        .roi-card {
+            background: var(--accent-bg);
+            border: 1px solid var(--accent-line);
+            border-radius: 0.75rem;
+            padding: 1.5rem 1.1rem;
+            text-align: center;
+        }
+        .roi-card h3 { color: #1e3a8a; margin-bottom: 0.35rem; }
+        .roi-value {
+            font-size: clamp(2.75rem, 12vw, 3.25rem);
+            font-weight: 700;
+            color: var(--accent);
+            letter-spacing: -0.03em;
+            line-height: 1;
+            margin: 0;
+            font-variant-numeric: tabular-nums;
+        }
+        .formula {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+            margin-top: 1rem;
+            font-size: 0.78rem;
+            color: #1d4ed8;
+            font-variant-numeric: tabular-nums;
+        }
+        .frac { display: inline-flex; flex-direction: column; text-align: center; }
+        .frac .num { padding: 0 0.35rem 0.1rem; }
+        .frac .den { padding: 0.1rem 0.35rem 0; border-top: 1px solid currentColor; }
+
+        .footnote { font-size: 0.75rem; color: var(--muted); text-align: center; margin: 1.25rem 0 0; }
+
+        /* ==== KONTAKT ==== */
+        .contact {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            margin-top: 1rem;
+        }
+        .contact a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            min-height: 52px;
+            padding: 0.75rem 1rem;
+            border-radius: 0.75rem;
+            border: 1px solid var(--line);
+            background: var(--card);
+            font-weight: 600;
+            text-decoration: none;
+            font-size: clamp(0.82rem, 4vw, 1rem);
+            min-width: 0;
+            overflow-wrap: anywhere;
+        }
+        .contact a svg { width: 20px; height: 20px; flex: 0 0 20px; color: var(--muted); }
+        .contact a.primary {
+            background: var(--ink);
+            border-color: var(--ink);
+            color: #fff;
+        }
+        .contact a.primary svg { color: rgba(255, 255, 255, 0.75); }
+        .contact .who { font-size: 0.8rem; color: var(--muted); text-align: center; margin: 0 0 0.25rem; }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 3rem;
+            border-top: 1px solid var(--line);
+            font-size: 0.8rem;
+            color: var(--muted);
+        }
+
+        /* ==== PASEK KONTAKTU NA MOBILE ==== */
+        .sticky-bar {
+            position: fixed;
+            left: 0; right: 0; bottom: 0;
+            z-index: 30;
+            display: flex;
+            gap: 0.5rem;
+            padding: 0.6rem 0.75rem calc(0.6rem + env(safe-area-inset-bottom));
+            background: rgba(248, 249, 250, 0.94);
+            backdrop-filter: blur(8px);
+            border-top: 1px solid var(--line);
+        }
+        .sticky-bar a {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            min-height: 48px;
+            border-radius: 0.7rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            border: 1px solid var(--line);
+            background: #fff;
+            color: var(--ink);
+        }
+        .sticky-bar a.primary { background: var(--ink); border-color: var(--ink); color: #fff; }
+        .sticky-bar a svg { width: 18px; height: 18px; }
+        body { padding-bottom: calc(5.25rem + env(safe-area-inset-bottom)); }
+
+        @media (min-width: 768px) {
+            .sticky-bar { display: none; }
+            body { padding-bottom: 0; }
+            .wrap { padding: 0 2rem; }
+            header.hero { padding-top: 3.5rem; }
+            .facts { grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
+            section { margin-top: 4.5rem; }
+            .cols { grid-template-columns: 3fr 2fr; gap: 2.5rem; }
+            .roi-grid { grid-template-columns: 3fr 2fr; gap: 2rem; align-items: start; }
+            .roi-card { display: flex; flex-direction: column; justify-content: center; min-height: 100%; }
+            .contact { flex-direction: row; justify-content: center; }
+            .contact a { flex: 0 1 auto; min-width: 16rem; }
+            .contact .who { flex-basis: 100%; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html, .track { scroll-behavior: auto; }
+            * { transition: none !important; }
+        }
+
+        @media print {
+            .sticky-bar, .nav-btn, .chips, .counter { display: none !important; }
+            body { padding-bottom: 0; background: #fff; }
+            .track { overflow: visible; display: block; }
+            .slide { break-inside: avoid; page-break-inside: avoid; }
+        }
     </style>
 </head>
-<body class="antialiased">
+<body>
 
-    <div class="max-w-4xl mx-auto p-4 md:p-8 space-y-8 md:space-y-12">
+    <div class="wrap">
 
-        <!-- Section 1: Hero Section -->
-        <header class="text-center pt-12 pb-4">
-            <h1 class="text-4xl md:text-5xl font-bold text-slate-900 tracking-wide mb-6">
-                Mieszkanie inwestycyjne | Sześć pokoi w centrum | Jagiełły 3
-            </h1>
-            <p class="max-w-2xl mx-auto text-slate-500 text-base">
-                Okazja inwestycyjna: 103 m² w odrestaurowanej kamienicy, zoptymalizowane pod wynajem. Sześć pokoi i atrakcyjna lokalizacja gwarantują pełne obłożenie i stabilny dochód pasywny.
+        <!-- Hero -->
+        <header class="hero">
+            <h1>Mieszkanie inwestycyjne, sześć pokoi w centrum, Jagiełły 3</h1>
+            <p class="lead">
+                103 m² w odrestaurowanej kamienicy, zoptymalizowane pod wynajem. Sześć pokoi
+                i lokalizacja w centrum Szczecina zapewniają pełne obłożenie i stabilny dochód pasywny.
             </p>
+            <dl class="facts">
+                <div class="fact"><dt>Powierzchnia</dt><dd>103 m²</dd></div>
+                <div class="fact"><dt>Pokoje</dt><dd>6</dd></div>
+                <div class="fact"><dt>Piętro</dt><dd>3</dd></div>
+                <div class="fact"><dt>Cena</dt><dd>650 000 zł</dd></div>
+            </dl>
         </header>
 
-        <main class="space-y-16 md:space-y-20">
-            <!-- Section 2: Photo Gallery (Slider) -->
-            <section id="galeria" class="relative">
-                <div class="slider-container rounded-xl overflow-hidden border border-slate-200/80">
-                    <!-- Slides -->
-                    <div class="slide active"><img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/kamienica.jpg" alt="[Zdjęcie kamienicy]" class="w-full h-auto object-cover"><p class="text-center text-sm text-slate-500 py-3 bg-slate-50">Odrestaurowana kamienica</p></div>
-                    <div class="slide"><img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/kuchnia.jpg" alt="[Zdjęcie kuchni]" class="w-full h-auto object-cover"><p class="text-center text-sm text-slate-500 py-3 bg-slate-50">Duża kuchnia z oknem</p></div>
-                    <div class="slide"><img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/lazienka_1.jpg" alt="[Zdjęcie łazienki]" class="w-full h-auto object-cover"><p class="text-center text-sm text-slate-500 py-3 bg-slate-50">Łazienka - widok 1</p></div>
-                    <div class="slide"><img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/lazienka_2.jpg" alt="[Zdjęcie łazienki]" class="w-full h-auto object-cover"><p class="text-center text-sm text-slate-500 py-3 bg-slate-50">Łazienka - widok 2</p></div>
-                    <div class="slide"><img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/przedpokoj.jpg" alt="[Zdjęcie przedpokoju]" class="w-full h-auto object-cover"><p class="text-center text-sm text-slate-500 py-3 bg-slate-50">Przedpokój</p></div>
-                    <div class="slide"><img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/pokoj1_1.jpeg" alt="[Zdjęcie pokoju 1]" class="w-full h-auto object-cover"><p class="text-center text-sm text-slate-500 py-3 bg-slate-50">Pokój 1</p></div>
-                    <div class="slide"><img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/pokoj1_2.jpeg" alt="[Zdjęcie pokoju 1]" class="w-full h-auto object-cover"><p class="text-center text-sm text-slate-500 py-3 bg-slate-50">Pokój 1</p></div>
-                    <div class="slide"><img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/pokoj1_3.jpeg" alt="[Zdjęcie pokoju 1]" class="w-full h-auto object-cover"><p class="text-center text-sm text-slate-500 py-3 bg-slate-50">Pokój 1</p></div>
-                    <div class="slide"><img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/pokoj3_01.jpg" alt="[Zdjęcie pokoju 3]" class="w-full h-auto object-cover"><p class="text-center text-sm text-slate-500 py-3 bg-slate-50">Pokój 3</p></div>
-                    <div class="slide"><img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/pokoj3_02.jpg" alt="[Zdjęcie pokoju 3]" class="w-full h-auto object-cover"><p class="text-center text-sm text-slate-500 py-3 bg-slate-50">Pokój 3</p></div>
-                    <div class="slide"><img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/pokoj3_03.jpg" alt="[Zdjęcie pokoju 3]" class="w-full h-auto object-cover"><p class="text-center text-sm text-slate-500 py-3 bg-slate-50">Pokój 3</p></div>
-                    <div class="slide"><img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/pokoj3_04.jpg" alt="[Zdjęcie pokoju 3]" class="w-full h-auto object-cover"><p class="text-center text-sm text-slate-500 py-3 bg-slate-50">Pokój 3</p></div>
-                    <div class="slide"><img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/pokoj3_05.jpg" alt="[Zdjęcie pokoju 3]" class="w-full h-auto object-cover"><p class="text-center text-sm text-slate-500 py-3 bg-slate-50">Pokój 3</p></div>
-                    <div class="slide"><img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/pokoj3_06.jpg" alt="[Zdjęcie pokoju 3]" class="w-full h-auto object-cover"><p class="text-center text-sm text-slate-500 py-3 bg-slate-50">Pokój 3</p></div>
-                    <div class="slide"><img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/pokoj5_1.jpg" alt="[Zdjęcie pokoju 5]" class="w-full h-auto object-cover"><p class="text-center text-sm text-slate-500 py-3 bg-slate-50">Pokój 5</p></div>
-                    <div class="slide"><img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/pokoj5_2.jpg" alt="[Zdjęcie pokoju 5]" class="w-full h-auto object-cover"><p class="text-center text-sm text-slate-500 py-3 bg-slate-50">Pokój 5</p></div>
-                    <div class="slide"><img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/pokoj5_3.jpg" alt="[Zdjęcie pokoju 5]" class="w-full h-auto object-cover"><p class="text-center text-sm text-slate-500 py-3 bg-slate-50">Pokój 5</p></div>
-                    <div class="slide"><img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/pokoj5_4.jpg" alt="[Zdjęcie pokoju 5]" class="w-full h-auto object-cover"><p class="text-center text-sm text-slate-500 py-3 bg-slate-50">Pokój 5</p></div>
-                    <div class="slide"><img src="https://raw.githubusercontent.com/emilia-chodorowska/Jagielly3/main/images/rzut.jpg" alt="[Rzut mieszkania]" class="w-full h-auto object-cover"><p class="text-center text-sm text-slate-500 py-3 bg-slate-50">Rzut mieszkania</p></div>
+        <main>
+            <!-- Galeria -->
+            <section id="galeria" class="gallery" aria-label="Galeria zdjęć">
+                <div class="carousel">
+                    <div class="track" id="track" tabindex="0" aria-label="Zdjęcia mieszkania, przewiń w bok">
+                        <div class="slide"><figure><img src="images/kamienica.jpg" width="1400" height="1050" alt="Elewacja odrestaurowanej kamienicy przy Jagiełły 3" fetchpriority="high" decoding="async"><figcaption>Odrestaurowana kamienica</figcaption></figure></div>
+                        <div class="slide"><figure><img src="images/kuchnia.jpg" width="1024" height="768" alt="Kuchnia z oknem" loading="lazy" decoding="async"><figcaption>Duża kuchnia z oknem</figcaption></figure></div>
+                        <div class="slide"><figure><img src="images/lazienka_1.jpg" width="1024" height="768" alt="Łazienka, widok 1" loading="lazy" decoding="async"><figcaption>Łazienka, widok 1</figcaption></figure></div>
+                        <div class="slide"><figure><img src="images/lazienka_2.jpg" width="1024" height="768" alt="Łazienka, widok 2" loading="lazy" decoding="async"><figcaption>Łazienka, widok 2</figcaption></figure></div>
+                        <div class="slide"><figure><img src="images/przedpokoj.jpg" width="1024" height="768" alt="Przedpokój" loading="lazy" decoding="async"><figcaption>Przedpokój</figcaption></figure></div>
+                        <div class="slide"><figure><img src="images/pokoj1_1.jpeg" width="1600" height="1200" alt="Pokój 1, widok 1" loading="lazy" decoding="async"><figcaption>Pokój 1</figcaption></figure></div>
+                        <div class="slide"><figure><img src="images/pokoj1_2.jpeg" width="1600" height="1200" alt="Pokój 1, widok 2" loading="lazy" decoding="async"><figcaption>Pokój 1</figcaption></figure></div>
+                        <div class="slide"><figure><img src="images/pokoj1_3.jpeg" width="1600" height="1200" alt="Pokój 1, widok 3" loading="lazy" decoding="async"><figcaption>Pokój 1</figcaption></figure></div>
+                        <div class="slide"><figure><img src="images/pokoj3_01.jpg" width="1024" height="768" alt="Pokój 3, widok 1" loading="lazy" decoding="async"><figcaption>Pokój 3</figcaption></figure></div>
+                        <div class="slide"><figure><img src="images/pokoj3_02.jpg" width="1024" height="768" alt="Pokój 3, widok 2" loading="lazy" decoding="async"><figcaption>Pokój 3</figcaption></figure></div>
+                        <div class="slide"><figure><img src="images/pokoj3_03.jpg" width="1024" height="768" alt="Pokój 3, widok 3" loading="lazy" decoding="async"><figcaption>Pokój 3</figcaption></figure></div>
+                        <div class="slide"><figure><img src="images/pokoj3_04.jpg" width="1024" height="768" alt="Pokój 3, widok 4" loading="lazy" decoding="async"><figcaption>Pokój 3</figcaption></figure></div>
+                        <div class="slide"><figure><img src="images/pokoj3_05.jpg" width="1600" height="1200" alt="Pokój 3, widok 5" loading="lazy" decoding="async"><figcaption>Pokój 3</figcaption></figure></div>
+                        <div class="slide"><figure><img src="images/pokoj3_06.jpg" width="1600" height="1200" alt="Pokój 3, widok 6" loading="lazy" decoding="async"><figcaption>Pokój 3</figcaption></figure></div>
+                        <div class="slide"><figure><img src="images/pokoj5_1.jpg" width="1024" height="768" alt="Pokój 5, widok 1" loading="lazy" decoding="async"><figcaption>Pokój 5</figcaption></figure></div>
+                        <div class="slide"><figure><img src="images/pokoj5_2.jpg" width="1024" height="768" alt="Pokój 5, widok 2" loading="lazy" decoding="async"><figcaption>Pokój 5</figcaption></figure></div>
+                        <div class="slide"><figure><img src="images/pokoj5_3.jpg" width="1024" height="768" alt="Pokój 5, widok 3" loading="lazy" decoding="async"><figcaption>Pokój 5</figcaption></figure></div>
+                        <div class="slide"><figure><img src="images/pokoj5_4.jpg" width="1024" height="768" alt="Pokój 5, widok 4" loading="lazy" decoding="async"><figcaption>Pokój 5</figcaption></figure></div>
+                        <div class="slide"><figure><img src="images/rzut.jpg" class="plan" width="1024" height="768" alt="Rzut mieszkania z podziałem na sześć pokoi" loading="lazy" decoding="async"><figcaption>Rzut mieszkania</figcaption></figure></div>
+                    </div>
+                    <span class="counter" id="counter" aria-hidden="true">1 / 19</span>
+                    <button class="nav-btn" id="prevBtn" type="button" aria-label="Poprzednie zdjęcie">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                    </button>
+                    <button class="nav-btn" id="nextBtn" type="button" aria-label="Następne zdjęcie">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </button>
                 </div>
-                <!-- Navigation -->
-                <div class="slider-nav">
-                    <button id="prevBtn" aria-label="Poprzednie zdjęcie">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-slate-700"><path d="m15 18-6-6 6-6"/></svg>
-                    </button>
-                    <button id="nextBtn" aria-label="Następne zdjęcie">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-slate-700"><path d="m9 18 6-6-6-6"/></svg>
-                    </button>
+                <div class="chips" id="chips" role="group" aria-label="Przejdź do pomieszczenia">
+                    <button class="chip" type="button" data-index="0">Kamienica</button>
+                    <button class="chip" type="button" data-index="1">Kuchnia</button>
+                    <button class="chip" type="button" data-index="2">Łazienka</button>
+                    <button class="chip" type="button" data-index="4">Przedpokój</button>
+                    <button class="chip" type="button" data-index="5">Pokój 1</button>
+                    <button class="chip" type="button" data-index="8">Pokój 3</button>
+                    <button class="chip" type="button" data-index="14">Pokój 5</button>
+                    <button class="chip" type="button" data-index="18">Rzut</button>
                 </div>
             </section>
 
-            <!-- Section 3: General Description -->
+            <!-- Opis -->
             <section id="opis">
-                <h2 class="section-title mb-8">O Nieruchomości</h2>
-                <div class="grid md:grid-cols-5 gap-8 text-slate-600 leading-relaxed">
-                    <div class="md:col-span-3">
+                <h2 class="section-title">O nieruchomości</h2>
+                <div class="cols">
+                    <div>
                         <p>
-                            Przestronne mieszkanie inwestycyjne zlokalizowane na III piętrze w odrestaurowanej kamienicy w sercu Szczecina. Lokal został profesjonalnie podzielony na <strong>6 niezależnych pokoi jednoosobowych</strong>, co maksymalizuje stopę zwrotu. Duża, widna kuchnia i komfortowa łazienka tworzą funkcjonalną przestrzeń wspólną.
+                            Przestronne mieszkanie inwestycyjne zlokalizowane na III piętrze w odrestaurowanej
+                            kamienicy w sercu Szczecina. Lokal został profesjonalnie podzielony na
+                            <strong>6 niezależnych pokoi jednoosobowych</strong>, co maksymalizuje stopę zwrotu.
+                            Duża, widna kuchnia i komfortowa łazienka tworzą funkcjonalną przestrzeń wspólną.
                         </p>
-                        <p class="mt-4">
-                            Lokalizacja w samym centrum przyciąga stabilną grupę najemców (studentów i młode osoby pracujące), co <strong>gwarantuje pełne obłożenie przez 12 miesięcy w roku</strong>. Aktualne umowy najmu są podpisane do końca września 2025 roku.
+                        <p>
+                            Lokalizacja w samym centrum przyciąga stabilną grupę najemców (studentów i młode osoby
+                            pracujące), co <strong>gwarantuje pełne obłożenie przez 12 miesięcy w roku</strong>.
+                            Aktualne umowy najmu są podpisane do końca września 2025 roku.
                         </p>
                     </div>
-                    <div class="md:col-span-2 text-sm">
-                        <h3 class="font-semibold text-slate-800 mb-3">Kluczowe Informacje:</h3>
-                        <ul class="space-y-2">
-                            <li><span class="font-medium text-slate-500">Lokalizacja:</span> Ul. Jagiełły 3, Szczecin</li>
-                            <li><span class="font-medium text-slate-500">Powierzchnia:</span> 103 m²</li>
-                            <li><span class="font-medium text-slate-500">Piętro:</span> 3</li>
-                            <li><span class="font-medium text-slate-500">Stan:</span> Bardzo dobry, 4 z 6 pokoi po odnowieniu</li>
-                        </ul>
-                        <h3 class="font-semibold text-slate-800 mt-6 mb-3">Atuty Techniczne:</h3>
-                        <ul class="space-y-3">
-                            <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 mr-3 text-slate-500 flex-shrink-0"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
-                                <span>Ogrzewanie miejskie</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 mr-3 text-slate-500 flex-shrink-0"><path d="m4 4 2.5 2.5"/><path d="M13.5 6.5a4.5 4.5 0 1 1-6.364 6.364"/><path d="M16 16s-1.5-2-4-2-4 2-4 2"/><path d="M8 22h8"/><path d="M12 16v6"/></svg>
-                                <span>Ciepła woda z podgrzewacza gazowego</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 mr-3 text-slate-500 flex-shrink-0"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.84l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.84Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg>
-                                <span>Wszystkie odpływy grawitacyjne (bezawaryjne)</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Section 4: ROI Calculation -->
-            <section id="roi">
-                <h2 class="section-title mb-8">Potencjał Inwestycyjny (ROI)</h2>
-                <p class="text-slate-600 mb-8 max-w-3xl">Nieruchomość jest gotowym biznesem. Poniższa symulacja przedstawia prognozowany roczny zwrot z inwestycji (ROI).</p>
-                
-                <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
-                    <div class="md:col-span-3 bg-white p-6 rounded-xl border border-slate-200">
-                        <h3 class="font-semibold text-slate-800 mb-4">Struktura Finansowa</h3>
-                        <div class="space-y-3 text-sm">
-                            <div class="flex justify-between py-2 border-b border-slate-100"><span class="text-slate-500">Cena Ofertowa:</span> <span class="font-mono font-semibold text-slate-900">650 000 PLN</span></div>
-                            <div class="flex justify-between py-2 border-b border-slate-100"><span class="text-slate-500">Miesięczny przychód (6 pokoi):</span> <span class="font-mono text-slate-700">7 300 PLN</span></div>
-                            <div class="py-2 border-b border-slate-100">
-                                <div class="flex justify-between"><span class="text-slate-500">Miesięczne koszty łączne:</span> <span class="font-mono text-slate-700">2 060 PLN</span></div>
-                                <div class="pl-4 text-xs text-slate-500 space-y-1 mt-2">
-                                    <div class="flex justify-between"><span>- Czynsz i ogrzewanie</span> <span class="font-mono">1 290 PLN</span></div>
-                                    <div class="flex justify-between"><span>- Fundusz remontowy</span> <span class="font-mono">260 PLN</span></div>
-                                    <div class="flex justify-between"><span>- Prąd</span> <span class="font-mono">215 PLN</span></div>
-                                    <div class="flex justify-between"><span>- Gaz</span> <span class="font-mono">225 PLN</span></div>
-                                    <div class="flex justify-between"><span>- Internet</span> <span class="font-mono">70 PLN</span></div>
-                                </div>
-                            </div>
-                            <div class="flex justify-between py-2 border-b border-slate-100 font-semibold"><span class="text-slate-800">Miesięczny dochód:</span> <span class="font-mono text-slate-900">5 240 PLN</span></div>
-                            <div class="flex justify-between pt-2 font-semibold"><span class="text-slate-800">Roczny dochód:</span> <span class="font-mono text-slate-900">62 880 PLN</span></div>
+                    <div>
+                        <div class="sub-card">
+                            <h3>Kluczowe informacje</h3>
+                            <ul class="info-list">
+                                <li><span>Lokalizacja</span><span>ul. Jagiełły 3, Szczecin</span></li>
+                                <li><span>Powierzchnia</span><span>103 m²</span></li>
+                                <li><span>Piętro</span><span>3</span></li>
+                                <li><span>Stan</span><span>Bardzo dobry, 4 z 6 pokoi po odnowieniu</span></li>
+                            </ul>
+                        </div>
+                        <div class="sub-card">
+                            <h3>Atuty techniczne</h3>
+                            <ul class="feature-list">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+                                    <span>Ogrzewanie miejskie</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 4 2.5 2.5"/><path d="M13.5 6.5a4.5 4.5 0 1 1-6.364 6.364"/><path d="M16 16s-1.5-2-4-2-4 2-4 2"/><path d="M8 22h8"/><path d="M12 16v6"/></svg>
+                                    <span>Ciepła woda z podgrzewacza gazowego</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.84l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.84Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg>
+                                    <span>Wszystkie odpływy grawitacyjne (bezawaryjne)</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    
-                    <div class="md:col-span-2 bg-blue-50 p-6 rounded-xl border border-blue-200 flex flex-col items-center justify-center text-center">
-                        <h3 class="font-semibold text-blue-900 mb-2">Prognozowane ROI</h3>
-                        <p class="text-5xl font-bold text-blue-800 tracking-tighter">9.67%</p>
-                        <p class="text-sm text-blue-700 mt-4 font-mono">
-                           $$ \frac{62\ 880 \text{ PLN}}{650\ 000 \text{ PLN}} \times 100\% $$
-                        </p>
-                    </div>
                 </div>
-                 <p class="text-xs text-slate-500 mt-6 text-center">
-                    Dostępna pełna dokumentacja finansowa.
-                </p>
             </section>
 
-            <!-- Section 5: Call to Action -->
-            <section id="kontakt" class="text-center pt-0 pb-12">
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-lg">
-                    <a href="tel:+48509959493" class="font-semibold text-slate-800 inline-flex items-center hover:text-blue-600 transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-2 text-slate-600 flex-shrink-0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                        Szymon Chodorowski: 509 959 493
+            <!-- ROI -->
+            <section id="roi">
+                <h2 class="section-title">Potencjał inwestycyjny (ROI)</h2>
+                <p style="color: var(--ink-soft); max-width: 44rem;">
+                    Nieruchomość jest gotowym biznesem. Poniższa symulacja przedstawia prognozowany roczny
+                    zwrot z inwestycji (ROI).
+                </p>
+
+                <div class="roi-grid">
+                    <div class="sub-card">
+                        <h3>Struktura finansowa</h3>
+                        <div class="fin-row"><span>Cena ofertowa</span><span class="val" style="font-weight:600">650 000 PLN</span></div>
+                        <div class="fin-row"><span>Miesięczny przychód (6 pokoi)</span><span class="val">7 300 PLN</span></div>
+                        <div class="fin-row" style="display:block">
+                            <div style="display:flex; justify-content:space-between; gap:0.75rem;">
+                                <span style="color:var(--muted)">Miesięczne koszty łączne</span><span class="val">2 060 PLN</span>
+                            </div>
+                            <div class="fin-sub">
+                                <div class="fin-row"><span>Czynsz i ogrzewanie</span><span class="val">1 290 PLN</span></div>
+                                <div class="fin-row"><span>Fundusz remontowy</span><span class="val">260 PLN</span></div>
+                                <div class="fin-row"><span>Prąd</span><span class="val">215 PLN</span></div>
+                                <div class="fin-row"><span>Gaz</span><span class="val">225 PLN</span></div>
+                                <div class="fin-row"><span>Internet</span><span class="val">70 PLN</span></div>
+                            </div>
+                        </div>
+                        <div class="fin-row total"><span>Miesięczny dochód</span><span class="val">5 240 PLN</span></div>
+                        <div class="fin-row total" style="border-bottom:0"><span>Roczny dochód</span><span class="val">62 880 PLN</span></div>
+                    </div>
+
+                    <div class="roi-card">
+                        <h3>Prognozowane ROI</h3>
+                        <p class="roi-value">9,67%</p>
+                        <div class="formula">
+                            <span class="frac">
+                                <span class="num">62 880 PLN</span>
+                                <span class="den">650 000 PLN</span>
+                            </span>
+                            <span>× 100%</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="footnote">Dostępna pełna dokumentacja finansowa.</p>
+            </section>
+
+            <!-- Kontakt -->
+            <section id="kontakt">
+                <h2 class="section-title">Kontakt</h2>
+                <div class="contact">
+                    <p class="who">Szymon Chodorowski</p>
+                    <a class="primary" href="tel:+48509959493">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        509 959 493
                     </a>
-                    <span class="hidden sm:block text-slate-300">|</span>
-                    <a href="mailto:szymon.chodorowski@gmail.com" class="font-semibold text-slate-800 inline-flex items-center hover:text-blue-600 transition-colors">
-                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-2 text-slate-600 flex-shrink-0"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    <a href="mailto:szymon.chodorowski@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                         szymon.chodorowski@gmail.com
                     </a>
                 </div>
             </section>
         </main>
 
-        <!-- Footer -->
-        <footer class="text-center py-6 border-t border-slate-200">
-            <p class="text-sm text-slate-500">&copy; 2025</p>
+        <footer>
+            <p>&copy; 2025</p>
         </footer>
+    </div>
 
+    <!-- Pasek kontaktu (tylko mobile) -->
+    <div class="sticky-bar">
+        <a class="primary" href="tel:+48509959493">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Zadzwoń
+        </a>
+        <a href="mailto:szymon.chodorowski@gmail.com">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            E-mail
+        </a>
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Render KaTeX math formulas after DOM loads
-            renderMathInElement(document.body, {
-                delimiters: [
-                    {left: '$$', right: '$$', display: true},
-                    {left: '$', right: '$', display: false},
-                    {left: '\\(', right: '\\)', display: false},
-                    {left: '\\[', right: '\\]', display: true}
-                ]
-            });
+        (function () {
+            var track = document.getElementById('track');
+            var slides = track.querySelectorAll('.slide');
+            var prevBtn = document.getElementById('prevBtn');
+            var nextBtn = document.getElementById('nextBtn');
+            var counter = document.getElementById('counter');
+            var chips = Array.prototype.slice.call(document.querySelectorAll('.chip'));
+            var total = slides.length;
+            var current = 0;
 
-            // Simple slider logic
-            const slides = document.querySelectorAll('.slide');
-            const prevBtn = document.getElementById('prevBtn');
-            const nextBtn = document.getElementById('nextBtn');
-            let currentSlide = 0;
+            counter.textContent = '1 / ' + total;
 
-            function goToSlide(n) {
-                if (!slides.length) return;
-                slides[currentSlide].classList.remove('active');
-                currentSlide = (n + slides.length) % slides.length;
-                slides[currentSlide].classList.add('active');
+            function goTo(i) {
+                var n = Math.max(0, Math.min(total - 1, i));
+                track.scrollTo({ left: n * track.clientWidth, behavior: 'smooth' });
             }
 
-            // Button handlers
-            prevBtn.addEventListener('click', () => {
-                goToSlide(currentSlide - 1);
-            });
-
-            nextBtn.addEventListener('click', () => {
-                goToSlide(currentSlide + 1);
-            });
-
-            // Initialize to show the first slide
-            if (slides.length > 0) {
-                goToSlide(0);
+            function syncUI() {
+                var i = Math.round(track.scrollLeft / track.clientWidth);
+                if (i === current) return;
+                current = i;
+                counter.textContent = (i + 1) + ' / ' + total;
+                prevBtn.hidden = i === 0;
+                nextBtn.hidden = i === total - 1;
+                var active = null;
+                chips.forEach(function (c) {
+                    if (parseInt(c.dataset.index, 10) <= i) active = c;
+                });
+                chips.forEach(function (c) {
+                    c.setAttribute('aria-current', c === active ? 'true' : 'false');
+                });
+                if (active) {
+                    var box = active.getBoundingClientRect();
+                    var wrapBox = active.parentElement.getBoundingClientRect();
+                    if (box.left < wrapBox.left || box.right > wrapBox.right) {
+                        active.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                    }
+                }
             }
-        });
+
+            var ticking = false;
+            track.addEventListener('scroll', function () {
+                if (ticking) return;
+                ticking = true;
+                requestAnimationFrame(function () { syncUI(); ticking = false; });
+            }, { passive: true });
+
+            prevBtn.addEventListener('click', function () { goTo(current - 1); });
+            nextBtn.addEventListener('click', function () { goTo(current + 1); });
+
+            chips.forEach(function (c) {
+                c.addEventListener('click', function () { goTo(parseInt(c.dataset.index, 10)); });
+            });
+
+            track.addEventListener('keydown', function (e) {
+                if (e.key === 'ArrowRight') { e.preventDefault(); goTo(current + 1); }
+                if (e.key === 'ArrowLeft') { e.preventDefault(); goTo(current - 1); }
+            });
+
+            // po obrocie ekranu scroll-snap potrafi wylądować między slajdami
+            window.addEventListener('resize', function () {
+                track.scrollLeft = current * track.clientWidth;
+            });
+
+            prevBtn.hidden = true;
+            chips[0].setAttribute('aria-current', 'true');
+        })();
     </script>
 
 </body>
