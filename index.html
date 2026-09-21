@@ -769,23 +769,24 @@
 
     <dialog class="modal" id="modal-gaz">
         <div class="modal-head">
-            <h3>Gaz — skąd 170 zł miesięcznie</h3>
+            <h3>Gaz — średni miesięczny koszt</h3>
             <button type="button" class="modal-x" aria-label="Zamknij">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
             </button>
         </div>
         <div class="modal-body">
             <p>
-                Część faktur w ciągu roku jest prognozowana, więc pojedynczy miesiąc nic nie mówi.
-                Poniżej okres zamknięty dwoma rzeczywistymi odczytami licznika — prognozy w środku
-                rozliczają się w fakturze wystawionej po odczycie.
+                W analizowanym okresie, od 11.07.2025 do 16.07.2026, rzeczywiste zużycie wyniosło
+                479 m³ gazu w ciągu 370 dni.
             </p>
             <div class="meter">
                 <div class="meter-row"><span>Odczyt 11.07.2025</span><span>3 360 m³</span></div>
                 <div class="meter-row"><span>Odczyt 16.07.2026</span><span>3 839 m³</span></div>
                 <div class="meter-row total"><span>Zużycie w 370 dni</span><span>479 m³</span></div>
             </div>
-            <p style="margin-top:1rem">Faktury obejmujące dokładnie ten okres:</p>
+            <p style="margin-top:1rem">
+                Faktury obejmujące ten okres opiewają łącznie na 2 087,18 zł i obejmują 5 479 kWh.
+            </p>
             <table>
                 <thead>
                     <tr><th>Termin</th><th>Zużycie</th><th>Kwota</th></tr>
@@ -808,11 +809,14 @@
                 </tfoot>
             </table>
             <div class="modal-result">
-                5 479 kWh na fakturach wobec 479 m³ z licznika to 11,44 kWh/m³, czyli faktury pokrywają
-                zużycie bez luk. <strong>2 087,18 zł ÷ 12,2 miesiąca = 172 zł</strong>, w kalkulacji przyjęto 170 zł.
-                Średnie zużycie: 450 kWh (39 m³) miesięcznie.
+                <strong>2 087,18 zł ÷ 12,2 miesiąca = ok. 171 zł/mies.</strong>
+                W kalkulacji przyjęto więc 170 zł miesięcznie.
+                Średnie zużycie wyniosło około 39 m³ (450 kWh) miesięcznie.
             </div>
-            <p class="modal-src">Źródło: historia odczytów i faktury w eBOK myORLEN, stan na 21.09.2026. Wiersze wyszarzone to faktury prognozowane.</p>
+            <p class="modal-src">
+                Dane na podstawie historii odczytów licznika i faktur w eBOK myORLEN, stan na 21.09.2026.
+                Część faktur ma charakter prognozowany i jest rozliczana przy kolejnym rzeczywistym odczycie.
+            </p>
         </div>
     </dialog>
 
