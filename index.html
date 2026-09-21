@@ -368,11 +368,11 @@
         }
         .contact a svg { width: 20px; height: 20px; flex: 0 0 20px; color: var(--muted); }
         .contact a.primary {
-            background: var(--ink);
-            border-color: var(--ink);
-            color: #fff;
+            background: #fff;
+            border-color: var(--accent);
+            color: var(--accent);
         }
-        .contact a.primary svg { color: rgba(255, 255, 255, 0.75); }
+        .contact a.primary svg { color: var(--accent); }
 
         footer {
             text-align: center;
@@ -410,8 +410,9 @@
             background: #fff;
             color: var(--ink);
         }
-        .sticky-bar a.primary { background: var(--ink); border-color: var(--ink); color: #fff; }
+        .sticky-bar a.primary { background: #fff; border-color: var(--accent); color: var(--accent); }
         .sticky-bar a svg { width: 18px; height: 18px; }
+        .sticky-bar a.primary svg { color: var(--accent); }
         body { padding-bottom: calc(5.25rem + env(safe-area-inset-bottom)); }
 
         @media (min-width: 768px) {
